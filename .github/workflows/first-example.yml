@@ -11,7 +11,7 @@ jobs:
 
             - name: Add ENV to file
               run: | 
-                echo ${{ secrets.DEV_ENV }} >> .env
+                echo ${{ secrets.DEV_ENV }} >> env.txt
                 ls -ltra
-                cat .env
+                cat emv.txt
             
