@@ -13,5 +13,5 @@ jobs:
               run: | 
                 echo ${{ secrets.DEV_ENV }} >> env.txt
                 ls -ltra
-                cat emv.txt
+                cat env.txt
             
