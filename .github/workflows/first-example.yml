@@ -9,11 +9,9 @@ jobs:
             - name: Checkout Repo
               uses: actions/checkout@v4
 
-            - name: List and Read Files
+            - name: Add ENV to file
               run: | 
-                echo "My first github actions message"
+                echo ${{ secrets.DEV_ENV }} >> .env
                 ls -ltra
-                cat README.md
+                cat .env
             
-            - name: Generate ASCII Artwork
-              run: cowsay -f dragon "Run for cover, i'm a dragon... RAWR...." >> dragon.txt
